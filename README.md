@@ -4,9 +4,9 @@
 ```
 curl -i -X POST http://localhost:3000/images \
         -H "Content-Type: image/jpeg" \
-        -d "@/Users/ema/Desktop/example.jpg"
+        --data-binary "@/Users/ema/Desktop/example.jpg"
 
 curl -i -X POST http://localhost:3000/images \
         -H "Content-Type: image/jpeg" \
-        --data-binary "@/Users/ema/Desktop/example.jpg"
+        -T "/Users/ema/Desktop/example.jpg"
 ```
